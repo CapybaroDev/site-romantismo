@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantismo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #ffd6dc, #ffc0cb);
+      color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #c94c6d, #ff6f91);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* detalhe decorativo no header */
+    header::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      top: -50px;
+      right: -50px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin: 30px auto;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      transition: transform 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+    }
+
+    .secao-fases {
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .fases-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .fase {
+      flex: 1;
+      min-width: 0;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.25s ease;
+      border-top: 4px solid #c94c6d; /* detalhe decorativo */
+    }
+
+    .fase:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #000;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    /* linha decorativa abaixo do título */
+    h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #c94c6d;
+      margin-top: 5px;
+      border-radius: 2px;
+    }
+
+    h3 {
+      color: #000;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    /* responsividade */
+    @media (max-width: 768px) {
+      .fases-container {
+        flex-wrap: wrap;
+      }
+
+      .fase {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Romantismo</h1>
+  <p>Movimento literário marcado pela emoção, subjetividade e idealização</p>
+</header>
+
+<section>
+  <h2>O que foi o Romantismo?</h2>
+  <p>O Romantismo foi um movimento cultural, artístico e literário que surgiu na Europa no final do século XVIII, como reação ao racionalismo do Iluminismo. No século XIX, espalhou-se por diversos países, incluindo o Brasil e Portugal.</p>
+  <p>Esse movimento valorizava a emoção, o subjetivismo e a liberdade de expressão, colocando o sentimento acima da razão. Os autores românticos buscavam expressar seus estados de espírito, idealizar o amor e exaltar a natureza.</p>
+  <p><strong>Principais características:</strong></p>
+  <ul>
+    <li>Subjetivismo e valorização das emoções</li>
+    <li>Idealização do amor e da mulher</li>
+    <li>Nacionalismo e valorização da cultura local</li>
+    <li>Fuga da realidade (escapismo)</li>
+    <li>Exaltação da natureza</li>
+  </ul>
+</section>
+
+<section class="secao-fases">
+  <h2>Romantismo no Brasil</h2>
+  <div class="fases-container">
+
+    <div class="fase">
+      <h3>1ª Fase - Indianista</h3>
+      <p><strong>Autor:</strong> Gonçalves Dias</p>
+      <p><strong>Histórico:</strong> A primeira fase do romantismo brasileiro buscava construir uma identidade nacional. O indígena era visto como herói, substituindo o cavaleiro medieval europeu.</p>
+      <p><strong>Estilo:</strong> Linguagem mais formal, valorização da natureza brasileira e exaltação do índio como símbolo nacional.</p>
+      <p><strong>Principais obras:</strong> "Canção do Exílio", "I-Juca-Pirama", "Os Timbiras"</p>
+      <p><strong>Trecho:</strong> "Minha terra tem palmeiras, onde canta o sabiá; as aves que aqui gorjeiam, não gorjeiam como lá."</p>
+    </div>
+
+    <div class="fase">
+      <h3>2ª Fase - Ultrarromântica</h3>
+      <p><strong>Autor:</strong> Álvares de Azevedo</p>
+      <p><strong>Histórico:</strong> Também chamada de "mal do século", essa fase reflete o pessimismo e a angústia existencial dos jovens autores da época.</p>
+      <p><strong>Estilo:</strong> Forte subjetividade, presença de temas como morte, solidão, sofrimento e idealização amorosa impossível.</p>
+      <p><strong>Principais obras:</strong> "Lira dos Vinte Anos", "Noite na Taverna", "Macário"</p>
+      <p><strong>Trecho:</strong> "Oh! Que saudades que tenho da aurora da minha vida, da minha infância querida que os anos não trazem mais!"</p>
+    </div>
+
+    <div class="fase">
+      <h3>3ª Fase - Condoreira</h3>
+      <p><strong>Autor:</strong> Castro Alves</p>
+      <p><strong>Histórico:</strong> Fase marcada pelo engajamento social, principalmente na luta contra a escravidão e na defesa da liberdade.</p>
+      <p><strong>Estilo:</strong> Linguagem mais direta e oratória, com forte apelo político e social.</p>
+      <p><strong>Principais obras:</strong> "O Navio Negreiro", "Espumas Flutuantes", "Vozes d’África"</p>
+      <p><strong>Trecho:</strong> "Auriverde pendão de minha terra, que a brisa do Brasil beija e balança..."</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Romantismo em Portugal</h2>
+
+  <h3>Almeida Garrett</h3>
+  <p><strong>Histórico:</strong> Considerado o introdutor do romantismo em Portugal, teve grande influência na renovação da literatura portuguesa.</p>
+  <p><strong>Estilo:</strong> Mistura de tradição e inovação, com forte presença do nacionalismo e crítica social.</p>
+  <p><strong>Principais obras:</strong> "Frei Luís de Sousa", "Viagens na Minha Terra"</p>
+  <p><strong>Trecho:</strong> "Não há saudades mais dolorosas do que as das coisas que nunca foram."</p>
+
+  <h3>Alexandre Herculano</h3>
+  <p><strong>Histórico:</strong> Escritor e historiador importante, ajudou a consolidar o romantismo em Portugal.</p>
+  <p><strong>Estilo:</strong> Romance histórico, com preocupação em retratar fielmente os acontecimentos do passado.</p>
+  <p><strong>Principais obras:</strong> "Eurico, o Presbítero", "O Monge de Cister"</p>
+  <p><strong>Trecho:</strong> "A história é o romance verdadeiro das nações."</p>
+</section>
+
+</body>
+</html>

@@ -57,7 +57,7 @@
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            max-width: 1200px; /* aumentado */
+            max-width: 1200px;
             transition: transform 0.2s ease;
         }
 
@@ -80,7 +80,7 @@
 
         .fase {
             flex: 1;
-            max-width: 550px; /* caixas maiores */
+            max-width: 550px;
             padding: 40px;
             background-color: #fff;
             border-radius: 16px;
@@ -92,6 +92,12 @@
         .fase:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* NOVO: caixas maiores para Portugal */
+        .portugal .fase {
+            max-width: 650px;
+            flex: 1 1 45%;
         }
 
         h2 {
@@ -151,19 +157,7 @@
     <section>
         <h2>O que foi o Romantismo?</h2>
         <p>O Romantismo foi um movimento cultural, artístico e literário que surgiu na Europa no final do século XVIII,
-            como reação ao racionalismo do Iluminismo. No século XIX, espalhou-se por diversos países, incluindo o
-            Brasil e Portugal.</p>
-        <p>Esse movimento valorizava a emoção, o subjetivismo e a liberdade de expressão, colocando o sentimento acima
-            da razão. Os autores românticos buscavam expressar seus estados de espírito, idealizar o amor e exaltar a
-            natureza.</p>
-        <p><strong>Principais características:</strong></p>
-        <ul>
-            <li>Subjetivismo e valorização das emoções</li>
-            <li>Idealização do amor e da mulher</li>
-            <li>Nacionalismo e valorização da cultura local</li>
-            <li>Fuga da realidade (escapismo)</li>
-            <li>Exaltação da natureza</li>
-        </ul>
+            como reação ao racionalismo do Iluminismo.</p>
     </section>
 
     <section class="secao-fases">
@@ -173,51 +167,77 @@
             <div class="fase">
                 <h3>1ª Fase - Indianista</h3>
                 <p><strong>Autor:</strong> Gonçalves Dias</p>
-                <p><strong>Histórico:</strong> A primeira fase do romantismo brasileiro buscava construir uma identidade
-                    nacional. O indígena era visto como herói, substituindo o cavaleiro medieval europeu.</p>
-                <p><strong>Estilo:</strong> Linguagem mais formal, valorização da natureza brasileira e exaltação do
-                    índio como símbolo nacional.</p>
-                <p><strong>Principais obras:</strong> "Canção do Exílio", "I-Juca-Pirama", "Os Timbiras"</p>
-                <p><strong>Trecho:</strong> "Minha terra tem palmeiras, onde canta o sabiá; as aves que aqui gorjeiam,
-                    não gorjeiam como lá."</p>
+                <p><strong>Trecho:</strong></p>
+                <p>
+                    Minha terra tem palmeiras,<br>
+                    Onde canta o sabiá;<br><br>
+                    As aves que aqui gorjeiam,<br>
+                    Não gorjeiam como lá.
+                </p>
             </div>
 
             <div class="fase">
                 <h3>2ª Fase - Ultrarromântica</h3>
                 <p><strong>Autor:</strong> Álvares de Azevedo</p>
-                <p><strong>Histórico:</strong> Também chamada de "mal do século", essa fase reflete o pessimismo e a
-                    angústia existencial dos jovens autores da época.</p>
-                <p><strong>Estilo:</strong> Forte subjetividade, presença de temas como morte, solidão, sofrimento e
-                    idealização amorosa impossível.</p>
-                <p><strong>Principais obras:</strong> "Lira dos Vinte Anos", "Noite na Taverna", "Macário"</p>
-                <p><strong>Trecho:</strong> "Oh! Que saudades que tenho da aurora da minha vida..."</p>
+                <p><strong>Trecho:</strong></p>
+                <p>
+                    Oh! Que saudades que tenho<br>
+                    Da aurora da minha vida,<br><br>
+                    Da minha infância querida<br>
+                    Que os anos não trazem mais!
+                </p>
             </div>
 
             <div class="fase">
                 <h3>3ª Fase - Condoreira</h3>
                 <p><strong>Autor:</strong> Castro Alves</p>
-                <p><strong>Histórico:</strong> Fase marcada pelo engajamento social, principalmente na luta contra a
-                    escravidão e na defesa da liberdade.</p>
-                <p><strong>Estilo:</strong> Linguagem mais direta e oratória, com forte apelo político e social.</p>
-                <p><strong>Principais obras:</strong> "O Navio Negreiro", "Espumas Flutuantes", "Vozes d’África"</p>
-                <p><strong>Trecho:</strong> "Auriverde pendão de minha terra..."</p>
+                <p><strong>Trecho:</strong></p>
+                <p>
+                    Auriverde pendão de minha terra,<br>
+                    Que a brisa do Brasil beija e balança,<br><br>
+                    Estandarte que à luz do sol encerra<br>
+                    As promessas divinas da esperança.
+                </p>
             </div>
 
         </div>
     </section>
 
-    <section>
+    <!-- PORTUGAL AGORA EM CARDS -->
+    <section class="secao-fases">
         <h2>Romantismo em Portugal</h2>
 
-        <h3>Almeida Garrett</h3>
-        <p><strong>Histórico:</strong> Considerado o introdutor do romantismo em Portugal.</p>
-        <p><strong>Estilo:</strong> Nacionalismo e crítica social.</p>
-        <p><strong>Obras:</strong> "Frei Luís de Sousa", "Viagens na Minha Terra"</p>
+        <div class="fases-container portugal">
 
-        <h3>Alexandre Herculano</h3>
-        <p><strong>Histórico:</strong> Importante escritor e historiador.</p>
-        <p><strong>Estilo:</strong> Romance histórico.</p>
-        <p><strong>Obras:</strong> "Eurico, o Presbítero", "O Monge de Cister"</p>
+            <div class="fase">
+                <h3>Almeida Garrett</h3>
+                <p><strong>Histórico:</strong> Introdutor do romantismo em Portugal.</p>
+                <p><strong>Estilo:</strong> Nacionalismo e subjetividade.</p>
+                <p><strong>Obras:</strong> "Frei Luís de Sousa"</p>
+                <p><strong>Trecho:</strong></p>
+                <p>
+                    Folhas caídas pelo chão,<br>
+                    Memórias leves do coração,<br><br>
+                    Sombras de um tempo que se foi,<br>
+                    Saudade viva que ainda dói.
+                </p>
+            </div>
+
+            <div class="fase">
+                <h3>Alexandre Herculano</h3>
+                <p><strong>Histórico:</strong> Escritor e historiador.</p>
+                <p><strong>Estilo:</strong> Romance histórico.</p>
+                <p><strong>Obras:</strong> "Eurico, o Presbítero"</p>
+                <p><strong>Trecho:</strong></p>
+                <p>
+                    Era noite escura e fria,<br>
+                    Silêncio em toda a amplidão;<br><br>
+                    Ao longe alguém ainda ouvia<br>
+                    Um triste e longo clamor vão.
+                </p>
+            </div>
+
+        </div>
     </section>
 
 </body>
